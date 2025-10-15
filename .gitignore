@@ -1,0 +1,30 @@
+# Pliki sesji i tymczasowe
+*.asv
+*.ses
+*.usr
+*.cst
+*.log
+*.bak
+*.tmp
+
+# Wyniki kompilacji (MEX-pliki)
+# Zależne od platformy i wersji MATLABa.
+# Zwykle to .mexw64 (Windows 64-bit), .mexa64 (Linux 64-bit), .mexmaci64 (macOS 64-bit).
+*.mex*
+
+# Pliki wykresów/rysunków
+*.fig
+*.eps
+
+# Pliki historii/preferencji
+history.m
+matlab.prf
+desktop.xml
+*.csm
+
+# Pliki generowane przez Simulink
+*.slxc
+
+# Pliki pomocnicze
+matlab.R*
+.DS_Store
