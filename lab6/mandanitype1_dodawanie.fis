@@ -1,0 +1,49 @@
+[System]
+Name='mandanitype1'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input1'
+Range=[0 10]
+NumMFs=3
+MF1='zero':'trimf',[-5 0 5]
+MF2='piec':'trimf',[0 5 10]
+MF3='dziesiec':'trimf',[5 10 15]
+
+[Input2]
+Name='input2'
+Range=[0 10]
+NumMFs=3
+MF1='zero':'trimf',[-5 0 5]
+MF2='piec':'trimf',[0 5 10]
+MF3='dziesiec':'trimf',[5 10 15]
+
+[Output1]
+Name='output1'
+Range=[-5 25]
+NumMFs=5
+MF1='zero':'trimf',[-5 0 5]
+MF2='piec':'trimf',[0 5 10]
+MF3='dziesiec':'trimf',[5 10 15]
+MF4='pietnascie':'trimf',[10 15 20]
+MF5='dwadziescia':'trimf',[15 20 25]
+
+[Rules]
+1 1, 1 (1) : 1
+2 1, 2 (1) : 1
+3 1, 3 (1) : 1
+1 2, 2 (1) : 1
+2 2, 3 (1) : 1
+3 2, 4 (1) : 1
+1 3, 3 (1) : 1
+2 3, 4 (1) : 1
+3 3, 5 (1) : 1
